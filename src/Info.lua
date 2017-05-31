@@ -17,10 +17,10 @@ return {
 	LrSdkVersion = 5.0,
 	LrSdkMinimumVersion = 5.0, -- minimum SDK version required by this plug-in
 
-	LrToolkitIdentifier = "com.tjotala.lightroom.robotagger",
+	LrToolkitIdentifier = "com.nitecoder.lightroom.robotagger",
 
 	LrPluginName = LOC( "$$$/RoboTagger/PluginName=RoboTagger" ),
-	LrPluginInfoUrl = "https://github.com/tjotala/lr-robotagger",
+	LrPluginInfoUrl = "https://github.com/nitecoder/lr-robotagger",
 	LrPluginInfoProvider = "RoboTaggerInfoProvider.lua",
 
 	LrInitPlugin = "RoboTaggerInit.lua",
@@ -44,8 +44,13 @@ return {
 			file = "RoboTaggerMenuItem.lua",
 			enabledWhen = "photosSelected",
 		},
+		{
+			title = LOC( "$$$/RoboTagger/LibraryMenuItem=Tag Photos with Microsoft Vision" ),
+			file = "MSVisionMenuItem.lua",
+			enabledWhen = "photosSelected",
+		},
 	},
 
-	VERSION = { major = 1, minor = 0, revision = 0, build = 1, },
+	VERSION = { major = 1, minor = 0, revision = 0, build = 2, },
 
 }

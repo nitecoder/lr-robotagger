@@ -1,6 +1,7 @@
 require 'rake/clean'
 
-LUAC = "luac5.1"
+#LUAC = "luac5.1"
+LUAC = "luac"
 ZIP = "zip"
 
 BUILD_DIR = "build"
